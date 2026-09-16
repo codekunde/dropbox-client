@@ -223,7 +223,7 @@ export async function putFileContents(
         method: "POST",
         url: UPLOAD_URL,
         query: {
-            arg: JSON.stringify({
+            arg: urlSafeJSONStringify({
                 path: filename,
                 mode: "overwrite"
             }),
