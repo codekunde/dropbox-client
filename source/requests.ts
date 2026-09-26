@@ -1,5 +1,4 @@
 import { HotPatcher } from "hot-patcher";
-import { Response } from "@buttercup/fetch";
 import { convertDropboxPathInfo, urlSafeJSONStringify } from "./convert.js";
 import { handleBadResponse, RequestConfig } from "./request.js";
 import { DropboxClientConfig, DropboxItemResult, DropboxPathInfo } from "./types.js";

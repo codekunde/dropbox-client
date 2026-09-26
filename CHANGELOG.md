@@ -2,6 +2,9 @@
 
 ## Unreleased (Codekunde fork)
 
+ * **Breaking**: requires NodeJS 18+. Uses the built-in `fetch` on every platform; `@buttercup/fetch` and `node-fetch` (and its deprecated `node-domexception`) are no longer dependencies
+ * `prepare` script, so installing from a git URL builds `dist/`
+ * Update dependencies: `layerr` 3; dev tooling (TypeScript 6, mocha 12, chai 6, sinon 22, rimraf 6), `npm audit` clean. `nyc` dropped (it never measured this ESM package)
  * **Bugfix**:
    * Paths/filenames are now normalised to NFC Unicode form before being sent to Dropbox, so vaults with diacritics in their filename (e.g. `sö.bcup`) can be opened on iOS, where the OS stores filenames in NFD form (buttercup/buttercup-mobile#147)
    * `putFileContents`'s query-string `arg` now uses the same ASCII-safe JSON escaping as the other content-endpoint requests, instead of raw `JSON.stringify`
