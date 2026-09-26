@@ -1,7 +1,6 @@
-import { Response, fetch } from "@buttercup/fetch";
 import URL from "url-parse";
 import { Layerr } from "layerr";
-import { Headers } from "./types";
+import { Headers } from "./types.js";
 
 export interface RequestConfig {
     body?: string | Buffer;
@@ -35,7 +34,8 @@ export async function request(config: RequestConfig): Promise<Response> {
     const response = await fetch(url.toString(), {
         method: config.method,
         headers: config.headers,
-        body: config.body
+        // Buffers work as fetch bodies, but the types only accept ArrayBuffer-backed views
+        body: config.body as BodyInit
     });
     return response;
 }

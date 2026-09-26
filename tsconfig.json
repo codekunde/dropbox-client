@@ -4,11 +4,15 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "outDir": "./dist",
-        "module": "es2020",
-        "moduleResolution": "node",
+        "rootDir": "./source",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
         "declaration": true,
         "resolveJsonModule": true,
-        "target": "es2020"
+        "target": "es2020",
+        // TypeScript 6 defaults: strict on, no automatic @types. Keep the previous behaviour.
+        "strict": false,
+        "types": ["node"]
     },
     "include": [
         "./source/**/*"
