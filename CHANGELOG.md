@@ -2,7 +2,7 @@
 
 ## Unreleased (Codekunde fork)
 
- * **Breaking**: requires NodeJS 18+. Uses the built-in `fetch` on every platform; `@buttercup/fetch` and `node-fetch` (and its deprecated `node-domexception`) are no longer dependencies
+ * **Breaking**: requires NodeJS 22+; CI runs on branch pushes only (Node 22 and 24). Uses the built-in `fetch` on every platform; `@buttercup/fetch` and `node-fetch` (and its deprecated `node-domexception`) are no longer dependencies
  * `prepare` script, so installing from a git URL builds `dist/`
  * Update dependencies: `layerr` 3; dev tooling (TypeScript 6, mocha 12, chai 6, sinon 22, rimraf 6), `npm audit` clean. `nyc` dropped (it never measured this ESM package)
  * **Bugfix**:

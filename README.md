@@ -1,7 +1,7 @@
 # Dropbox Client
 > Dropbox client library for Buttercup
 
-[![Buttercup](images/buttercup-slim.svg)](https://buttercup.codekunde.net) [![npm version](https://badge.fury.io/js/%40buttercup%2Fdropbox-client.svg)](https://www.npmjs.com/package/@buttercup/dropbox-client) ![Tests status](https://github.com/buttercup/dropbox-client/actions/workflows/test.yml/badge.svg)
+[![Buttercup](images/buttercup-slim.svg)](https://buttercup.codekunde.net) ![Tests status](https://github.com/buttercup-fork/dropbox-client/actions/workflows/test.yml/badge.svg)
 
 ## About
 
@@ -11,7 +11,7 @@ This library is a barebones HTTP client that makes requests directly to Dropbox'
 
 ## Installation
 
-Simply run `npm install @buttercup/dropbox-client --save` to install.
+Simply run `npm install github:buttercup-fork/dropbox-client --save` to install. This fork isn't published to npm; the package builds itself on install.
 
 The latest version (v2) requires an [ESM](https://nodejs.org/api/esm.html) environment to run. It is not available to standard CommonJS projects.
 
