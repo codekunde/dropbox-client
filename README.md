@@ -1,7 +1,7 @@
 # Dropbox Client
 > Dropbox client library for Buttercup
 
-[![Buttercup](https://cdn.rawgit.com/buttercup-pw/buttercup-assets/6582a033/badge/buttercup-slim.svg)](https://buttercup.pw) [![npm version](https://badge.fury.io/js/%40buttercup%2Fdropbox-client.svg)](https://www.npmjs.com/package/@buttercup/dropbox-client) ![Tests status](https://github.com/buttercup/dropbox-client/actions/workflows/test.yml/badge.svg)
+[![Buttercup](images/buttercup-slim.svg)](https://buttercup.codekunde.net) [![npm version](https://badge.fury.io/js/%40buttercup%2Fdropbox-client.svg)](https://www.npmjs.com/package/@buttercup/dropbox-client) ![Tests status](https://github.com/buttercup/dropbox-client/actions/workflows/test.yml/badge.svg)
 
 ## About
 
